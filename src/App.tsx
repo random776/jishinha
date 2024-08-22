@@ -95,7 +95,7 @@ const App = () => {
               10000
             )} m/s, 層厚 ${orgRound(result, 10000)} m`}</li>
           ))}
-          {results.length > 0 && (
+          {results.length >= 0 && (
             <li key={-1}>{`${results.length + 1}層目: 地震波速度 ${orgRound(
               velocity[results.length],
               10000
