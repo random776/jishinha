@@ -85,6 +85,9 @@ const App = () => {
       {/* <button onClick={handleCalculate}>計算</button> */}
       <div>
         <h2>結果</h2>
+        <p>
+          <textarea placeholder="memo"></textarea>
+        </p>
         <ul>
           {results.map((result, index) => (
             <li key={index}>{`${index + 1}層目: 地震波速度 ${orgRound(
